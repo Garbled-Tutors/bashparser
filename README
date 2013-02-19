@@ -1,0 +1,8 @@
+BashParser is a class designed to translate a string containing Terminal Escape Codes into an array of strings representing each line of output that bash would display given said string.
+
+This class was created to aid in the making of an AI program for a dungeon crawl game and as a result I have no intention of including code for every single escape code. Instead this will contain code for all of the codes encountered. However adding new codes into the code should be a relatively easy endevor in the event you find some not included.
+
+I found sometimes the best way to determine the effect of an escape code is simply trial and error as I have yet to find a reverse directory of them, so I plan on adding some functionality to speed and assist this process. Also translating colors or at least seperating text by color will likely make future versions.
+
+Planned Feature:
+read and display output similar to terminal based game for debugging purposes, as cat has proven to be an unreliable method of determining expected behavior

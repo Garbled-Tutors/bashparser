@@ -1,0 +1,33 @@
+Without Terminal Escape r
+[2;1Ha[3;1Hb[4;1Hc
+
+Outputs
+1
+2 a
+3 b
+4 c
+
+Escaping r at the end
+[2;1Ha[3;1Hb[4;1Hc[2;4r[4;1H
+
+Outputs
+1
+2 b
+3 c
+
+Escaping r in the middle
+[2;1Ha[3;1Hb[4;1Hc[2;3r[3;1H
+
+Outputs
+1
+2 b
+3
+4 c
+
+Footer for readability
+[50;0H
+
+System Notes
+GNU bash, version 4.2.10(1)-release (i686-pc-linux-gnu)
+Screen version 4.00.03jw4 (FAU) 2-May-06
+XTerm(271)

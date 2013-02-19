@@ -1,0 +1,11 @@
+Without Terminal Escape r
+[2;1Ha[3;1Hb[4;1Hc
+
+Escaping r at the end
+[2;1Ha[3;1Hb[4;1Hc[2;4r[4;1H
+
+Escaping r in the middle
+[2;1Ha[3;1Hb[4;1Hc[2;3r[3;1H
+
+Footer for readability
+[50;0H

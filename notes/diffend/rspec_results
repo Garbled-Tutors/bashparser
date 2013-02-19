@@ -1,0 +1,28 @@
+We created a file using one of BashParser's specs (original), then we opened it with vim and saved without changing anything (modified).
+This produced an unexpected difference between the output of the two files.
+
+Using original as input we BashParser created this result
+
+""
+"egestas id vitae quam"
+""
+"Maecenas eget quam id elit vestibulum"
+
+using cat on original produces this
+
+""
+"Proin tristique, libero fringilla adipiscing iaculis"
+""
+"Maecenas eget quam id elit vestibulum"
+
+using cat on modified produces the same as BashParser
+
+inspecting the hex shows only a small difference towards the end
+
+original
+0000080 5b1b 3b32 7233 5b1b 3b33 4831          
+000008c
+
+modified
+0000080 5b1b 3b32 7233 5b1b 3b33 4831 000a     
+000008d
